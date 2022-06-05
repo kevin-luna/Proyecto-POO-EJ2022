@@ -1,16 +1,19 @@
 package com.itver;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 
 public abstract class Menu {
     protected final BufferedReader lector;
     protected final String textoMenu;
+    protected final int cantOpciones;
 
     protected boolean salir=false;
 
-    public Menu(final BufferedReader lector, final String textoMenu) {
+    public Menu(final BufferedReader lector, final String textoMenu, final int cantOpciones) {
         this.lector = lector;
         this.textoMenu = textoMenu;
+        this.cantOpciones=cantOpciones;
     }
 
     public void iniciar(){
@@ -20,7 +23,18 @@ public abstract class Menu {
         }
     }
 
-    public abstract void leerOpcion();
+    public void leerOpcion(){
+        int opcion=0;
+        do{
+            System.out.print("->");
+            try{
+                opcion=Integer.parseInt(lector.readLine());
+            }catch (IOException e){
+                System.out.println("Ocurrio un error al leer la entrada");
+            }
+        }while(opcion<1 && opcion>cantOpciones);
+        seleccionarOpcion(opcion);
+    };
 
     public abstract void seleccionarOpcion(int op);
 
