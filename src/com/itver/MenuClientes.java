@@ -20,7 +20,12 @@ public class MenuClientes extends Menu {
             }
         }while(opcion<1 && opcion>3);
 
-        switch (opcion){
+        seleccionarOpcion(opcion);
+    }
+
+    @Override
+    public void seleccionarOpcion(int op){
+        switch (op){
             case 1:
                 System.out.println("Cliente agregado");
                 break;
@@ -31,10 +36,5 @@ public class MenuClientes extends Menu {
                 cerrar();
                 break;
         }
-    }
-
-    @Override
-    public void seleccionarOpcion(int op){
-
     }
 }

@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Primer commit.">
-      <change afterPath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/itver/MenuEmpleados.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/itver/MenuFactura.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/itver/MenuHabitaciones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/itver/MenuPrincipal.java" afterDir="false" />
+    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="El switch se cambió al método seleccionarOpcion en MenuClientes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="desarrollo" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,20 +34,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Kevin/Documents/ProyectoFinalPOO",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kevin/Documents/ProyectoFinalPOO&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.itver.Main" />
@@ -69,6 +64,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -139,6 +135,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Primer commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Primer commit." />
+    <MESSAGE value="El switch se cambió al método seleccionarOpcion en MenuClientes" />
+    <option name="LAST_COMMIT_MESSAGE" value="El switch se cambió al método seleccionarOpcion en MenuClientes" />
   </component>
 </project>
