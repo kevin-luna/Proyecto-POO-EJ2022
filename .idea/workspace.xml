@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Ya se almacenan registros de alquiler de habitaciones.">
+    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Por si se va la luzxd.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/itver/Alquiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Alquiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuHabitaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuHabitaciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/OperacionHabitacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/OperacionHabitacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Reservacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Reservacion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,7 @@
       <workItem from="1654389192934" duration="89000" />
       <workItem from="1654389296968" duration="2147000" />
       <workItem from="1654463945872" duration="2148000" />
-      <workItem from="1654482804787" duration="12232000" />
+      <workItem from="1654482804787" duration="13859000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit.">
       <created>1654388804596</created>
@@ -181,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654494120043</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Por si se va la luzxd.">
+      <created>1654495326440</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1654495326440</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +219,8 @@
     <MESSAGE value="Corrección en la clase Empleado, ahora hereda de Persona." />
     <MESSAGE value="Clase ObjectOutputStreamModificado eliminada.&#10;Ya que ahora se almacenan los registros en texto plano&#10;ya no es necesaria." />
     <MESSAGE value="Ya se almacenan registros de alquiler de habitaciones." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ya se almacenan registros de alquiler de habitaciones." />
+    <MESSAGE value="Por si se va la luzxd." />
+    <option name="LAST_COMMIT_MESSAGE" value="Por si se va la luzxd." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

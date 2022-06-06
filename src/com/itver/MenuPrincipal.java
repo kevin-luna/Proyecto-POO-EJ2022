@@ -16,7 +16,7 @@ public class MenuPrincipal extends Menu{
                 menuClientes.iniciar();
                 break;
             case 2:
-                MenuHabitaciones menuHabitaciones = new MenuHabitaciones(this.lector,"Gestión de habitaciones\n\n¿Qué desea hacer?\n1. Alquilar una habitación\n2. Reservar una habitación\n3. Regresar al menú anterior",3);
+                MenuHabitaciones menuHabitaciones = new MenuHabitaciones(this.lector,"Gestión de habitaciones\n\n¿Qué desea hacer?\n1. Alquilar una habitación\n2. Reservar una habitación\n3. Ver habitaciones alquiladas\n4. Ver reservaciones\n5. Regresar al menú anterior",5);
                 menuHabitaciones.iniciar();
                 break;
             case 3:

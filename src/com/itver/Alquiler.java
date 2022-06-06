@@ -10,7 +10,7 @@ public class Alquiler extends OperacionHabitacion{
     private String fechaSalida;
 
     public Alquiler(){super();};
-    public Alquiler(Cliente cliente, Habitacion habitacion, String fechaLlegada, String fechaSalida) {
+    public Alquiler(Cliente cliente, int habitacion, String fechaLlegada, String fechaSalida) {
         super(cliente, habitacion);
         this.fechaLlegada = fechaLlegada;
         this.fechaSalida = fechaSalida;
@@ -39,6 +39,8 @@ public class Alquiler extends OperacionHabitacion{
             cliente.setNombre(bfr.readLine());
             System.out.println("Ingrese el apellido del cliente:");
             cliente.setApellido(bfr.readLine());
+            System.out.println("Ingrese el número de habitación:");
+            cliente.setTelefono(bfr.readLine());
             System.out.println("Ingrese el telefono del cliente:");
             cliente.setTelefono(bfr.readLine());
             this.setCliente(cliente);
@@ -54,7 +56,7 @@ public class Alquiler extends OperacionHabitacion{
 
         try{
             FileWriter fw = new FileWriter(file,true);
-            fw.write(this.getCliente().getNombre()+";"+this.getCliente().getApellido()+";"+this.getFechaLlegada()+";"+this.getFechaSalida()+"\n");
+            fw.write(this.getCliente().getNombre()+";"+this.getCliente().getApellido()+";"+this.getHabitacion()+";"+this.getCliente().getTelefono()+";"+this.getFechaLlegada()+";"+this.getFechaSalida()+"\n");
             fw.close();
             System.out.println("El registro de la habitación alquilada se ha realizado correctamente.");
         }catch (IOException e){
