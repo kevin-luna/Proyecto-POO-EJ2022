@@ -31,6 +31,8 @@ public abstract class Menu {
                 opcion=Integer.parseInt(lector.readLine());
             }catch (IOException e){
                 System.out.println("Ocurrio un error al leer la entrada");
+            }catch (NumberFormatException e){
+                System.out.println("Solo puede ingresar un número entero");
             }
         }while(opcion<1 && opcion>cantOpciones);
         seleccionarOpcion(opcion);
