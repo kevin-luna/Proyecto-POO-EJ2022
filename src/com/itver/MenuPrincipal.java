@@ -12,7 +12,7 @@ public class MenuPrincipal extends Menu{
     public void seleccionarOpcion(int opcion){
         switch (opcion){
             case 1:
-                MenuClientes menuClientes = new MenuClientes(this.lector,"Gestión de clientes\n\n¿Qué desea hacer?:\n1. Agregar un cliente\n2. Ver la lista de clientes\n3. Regresar al menú anterior\n",3);
+                MenuClientes menuClientes = new MenuClientes(this.lector,"Gestión de clientes\n\n¿Qué desea hacer?:\n1. Agregar clientes\n2. Ver la lista de clientes\n3. Regresar al menú anterior\n",3);
                 menuClientes.iniciar();
                 break;
             case 2:

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Menús terminados.">
+    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Excepción al leer caracteres distintos a un entero controlada.">
+      <change afterPath="$PROJECT_DIR$/src/com/itver/ObjectOutputStreamModificado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Persona.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +88,7 @@
       <workItem from="1654389192934" duration="89000" />
       <workItem from="1654389296968" duration="2147000" />
       <workItem from="1654463945872" duration="2148000" />
-      <workItem from="1654482804787" duration="751000" />
+      <workItem from="1654482804787" duration="3172000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit.">
       <created>1654388804596</created>
@@ -129,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654467893180</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Excepción al leer caracteres distintos a un entero controlada.">
+      <created>1654483597475</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654483597475</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +163,7 @@
     <MESSAGE value="Primer commit." />
     <MESSAGE value="El switch se cambió al método seleccionarOpcion en MenuClientes" />
     <MESSAGE value="Menús terminados." />
-    <option name="LAST_COMMIT_MESSAGE" value="Menús terminados." />
+    <MESSAGE value="Excepción al leer caracteres distintos a un entero controlada." />
+    <option name="LAST_COMMIT_MESSAGE" value="Excepción al leer caracteres distintos a un entero controlada." />
   </component>
 </project>
