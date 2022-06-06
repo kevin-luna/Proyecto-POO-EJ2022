@@ -1,8 +1,6 @@
 package com.itver;
 
-import java.io.BufferedReader;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 public class MenuClientes extends Menu {
     public MenuClientes(BufferedReader lector, String textoMenu,int cantOpciones) {
@@ -33,9 +31,9 @@ public class MenuClientes extends Menu {
                                 metodoPago= lector.readLine();
                                 Cliente nuevoCliente = new Cliente(nombre,apellido,fechaNacimiento,RFC,metodoPago);
                                 try{
-                                    ObjectOutputStreamModificado osm = new ObjectOutputStreamModificado(new FileOutputStream("./Clientes.dat",true));
-                                    osm.writeObject(nuevoCliente);
-                                    osm.close();
+                                    FileWriter fw = new FileWriter("./Clientes.txt",true);
+                                    fw.write(nuevoCliente.getNombre()+";"+nuevoCliente.getApellido()+";"+nuevoCliente.getFechaNacimiento()+";"+nuevoCliente.getRFC()+";"+nuevoCliente.getMetodoPago()+"\n");
+                                    fw.close();
                                     System.out.println("Cliente registrado correctamente.");
                                 }catch (IOException e){
                                     System.out.println("Ocurrió un error al intentar escribir en el archivo.");
@@ -52,7 +50,24 @@ public class MenuClientes extends Menu {
                 }while(cantClientes<0);
                 break;
             case 2:
-                System.out.println("Clientes mostrados");
+                try{
+                    BufferedReader fr = new BufferedReader(new FileReader("./Clientes.txt"));
+                    //System.out.println("|Nombre\t|\tApellido\t|\tFecha de nacimiento\t|\tRFC\t|\tMétodo de pago|");
+                    String leftAlignFormat = "| %-52s | %-52s | %-19s | %-9s | %-18s |%n";
+                    System.out.format("+------------------------------------------------------+------------------------------------------------------+---------------------+-----------+--------------------+%n");
+                    System.out.format("| Nombre                                               | Apellido                                             | Fecha de Nacimiento | RFC       | Metodo de pago     |%n");
+                    System.out.format("+------------------------------------------------------+------------------------------------------------------+---------------------+-----------+--------------------+%n");
+                    String line;
+                    while((line=fr.readLine())!=null){
+                        String serial[] = line.split(";");
+                        System.out.format(leftAlignFormat,serial[0],serial[1],serial[2],serial[3],serial[4]);
+                    }
+                    System.out.format("+------------------------------------------------------+------------------------------------------------------+---------------------+-----------+--------------------+%n");
+                }catch (FileNotFoundException e){
+                    System.out.println("No se encuentra el archivo");
+                }catch (IOException e){
+                    e.printStackTrace();
+                }
                 break;
             case 3:
                 cerrar();
