@@ -1,12 +1,13 @@
 package com.itver;
 
-public class Empleado {
+public class Empleado extends Persona{
     private String puesto;
     private String horaEntrada;
     private String horaSalida;
     private float salario;
 
-    public Empleado(String puesto, String horaEntrada, String horaSalida, float salario) {
+    public Empleado(String nombre, String apellido, String fechaNacimiento, String RFC, String puesto, String horaEntrada, String horaSalida, float salario) {
+        super(nombre, apellido, fechaNacimiento, RFC);
         this.puesto = puesto;
         this.horaEntrada = horaEntrada;
         this.horaSalida = horaSalida;
