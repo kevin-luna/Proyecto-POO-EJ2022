@@ -9,6 +9,11 @@ public class Persona implements Serializable {
     private String RFC;
 
     public Persona(){};
+
+    public Persona(String nombre,String apellido){
+        this.nombre=nombre;
+        this.apellido=apellido;
+    }
     public Persona(String nombre, String apellido, String fechaNacimiento, String RFC) {
         this.nombre = nombre;
         this.apellido = apellido;

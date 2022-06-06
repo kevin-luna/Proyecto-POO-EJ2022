@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Ya es posible registrar clientes.">
+    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Clase ObjectOutputStreamModificado eliminada.&#10;Ya que ahora se almacenan los registros en texto plano&#10;ya no es necesaria.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Alquiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Alquiler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/itver/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuHabitaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuHabitaciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/OperacionHabitacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/OperacionHabitacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Persona.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,20 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kevin/Documents/ProyectoFinalPOO&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Kevin/Documents/ProyectoFinalPOO",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.itver.Main" />
@@ -85,7 +89,7 @@
       <workItem from="1654389192934" duration="89000" />
       <workItem from="1654389296968" duration="2147000" />
       <workItem from="1654463945872" duration="2148000" />
-      <workItem from="1654482804787" duration="7756000" />
+      <workItem from="1654482804787" duration="11148000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit.">
       <created>1654388804596</created>
@@ -150,7 +154,28 @@
       <option name="project" value="LOCAL" />
       <updated>1654486105912</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Se solucionó el problema de la lectura desde archivos.&#10;Ahora los registros se almacenan en texto plano.&#10;Ya es posible visualizar el registro de clientes.">
+      <created>1654490680414</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1654490680414</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Corrección en la clase Empleado, ahora hereda de Persona.">
+      <created>1654491937159</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654491937159</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Clase ObjectOutputStreamModificado eliminada.&#10;Ya que ahora se almacenan los registros en texto plano&#10;ya no es necesaria.">
+      <created>1654491981874</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1654491981874</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +202,13 @@
     <MESSAGE value="Excepción al leer caracteres distintos a un entero controlada." />
     <MESSAGE value="Clase ObjectOutputStreamModificado agregada para eliminar&#10;el patron de final de objetos en el archivo." />
     <MESSAGE value="Ya es posible registrar clientes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ya es posible registrar clientes." />
+    <MESSAGE value="Se solucionó el problema de la lectura desde archivos.&#10;Ahora los registros se almacenan en texto plano.&#10;Ya es posible visualizar el registro de clientes." />
+    <MESSAGE value="Corrección en la clase Empleado, ahora hereda de Persona." />
+    <MESSAGE value="Clase ObjectOutputStreamModificado eliminada.&#10;Ya que ahora se almacenan los registros en texto plano&#10;ya no es necesaria." />
+    <option name="LAST_COMMIT_MESSAGE" value="Clase ObjectOutputStreamModificado eliminada.&#10;Ya que ahora se almacenan los registros en texto plano&#10;ya no es necesaria." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

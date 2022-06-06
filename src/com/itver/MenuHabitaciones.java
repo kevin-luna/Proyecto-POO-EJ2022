@@ -13,7 +13,9 @@ public class MenuHabitaciones extends Menu{
     public void seleccionarOpcion(int op){
         switch (op){
             case 1:
-                System.out.println("Habitación alquilada");
+                Alquiler nuevoAlquiler = new Alquiler();
+                nuevoAlquiler.leer(lector);
+                nuevoAlquiler.guardar("./RegistroAlquiler.txt");
                 break;
             case 2:
                 System.out.println("Habitación reservada");
