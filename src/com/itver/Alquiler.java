@@ -39,6 +39,8 @@ public class Alquiler extends OperacionHabitacion{
             cliente.setNombre(bfr.readLine());
             System.out.println("Ingrese el apellido del cliente:");
             cliente.setApellido(bfr.readLine());
+            System.out.println("Ingrese el telefono del cliente:");
+            cliente.setTelefono(bfr.readLine());
             this.setCliente(cliente);
             System.out.println("Ingrese la fecha de llegada:");
             this.setFechaLlegada(bfr.readLine());

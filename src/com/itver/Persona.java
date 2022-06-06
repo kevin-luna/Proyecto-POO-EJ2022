@@ -7,14 +7,16 @@ public class Persona implements Serializable {
     private String apellido;
     private String fechaNacimiento;
     private String RFC;
+    private String telefono;
 
     public Persona(){};
 
-    public Persona(String nombre,String apellido){
+    public Persona(String nombre,String apellido,String telefono){
         this.nombre=nombre;
         this.apellido=apellido;
+        this.telefono=telefono;
     }
-    public Persona(String nombre, String apellido, String fechaNacimiento, String RFC) {
+    public Persona(String nombre, String apellido, String fechaNacimiento,String telefono, String RFC) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.fechaNacimiento = fechaNacimiento;
@@ -35,6 +37,14 @@ public class Persona implements Serializable {
 
     public String getRFC() {
         return RFC;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     public void setNombre(String nombre) {

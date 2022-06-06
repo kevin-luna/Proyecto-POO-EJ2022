@@ -9,12 +9,12 @@ public class Cliente extends Persona{
 
     public Cliente(){};
 
-    public Cliente(String nombre,String apellido){
-        super(nombre,apellido);
+    public Cliente(String nombre,String apellido,String telefono){
+        super(nombre,apellido,telefono);
     }
 
-    public Cliente(String nombre, String apellido, String fechaNacimiento, String RFC, String metodoPago) {
-        super(nombre, apellido, fechaNacimiento, RFC);
+    public Cliente(String nombre, String apellido, String fechaNacimiento,String telefono, String RFC, String metodoPago) {
+        super(nombre, apellido, fechaNacimiento,telefono, RFC);
         this.metodoPago=metodoPago;
     }
 
@@ -41,12 +41,12 @@ public class Cliente extends Persona{
                         this.setApellido(bfr.readLine());
                         System.out.println("Ingrese la fecha de nacimiento del cliente:");
                         this.setFechaNacimiento(bfr.readLine());
+                        System.out.println("Ingrese el telefono del cliente:");
+                        this.setTelefono(bfr.readLine());
                         System.out.println("Ingrese el RFC del cliente:");
                         this.setRFC(bfr.readLine());
                         System.out.println("Ingrese el método de pago del cliente:");
-                        this.setMetodoPago(bfr.readLine()) ;
-//                        Cliente nuevoCliente = new Cliente(nombre,apellido,fechaNacimiento,RFC,metodoPago);
-
+                        this.setMetodoPago(bfr.readLine());
                     }catch (IOException e){
                         System.out.println("Ocurrió un error al leer los datos.");
                     }
@@ -62,7 +62,7 @@ public class Cliente extends Persona{
     public void guardar(String file){
         try{
             FileWriter fw = new FileWriter(file,true);
-            fw.write(this.getNombre()+";"+this.getApellido()+";"+this.getFechaNacimiento()+";"+this.getRFC()+";"+this.getMetodoPago()+"\n");
+            fw.write(this.getNombre()+";"+this.getApellido()+";"+this.getFechaNacimiento()+";"+this.getTelefono()+";"+this.getRFC()+";"+this.getMetodoPago()+"\n");
             fw.close();
             System.out.println("Cliente registrado correctamente.");
         }catch (IOException e){

@@ -6,8 +6,8 @@ public class Empleado extends Persona{
     private String horaSalida;
     private float salario;
 
-    public Empleado(String nombre, String apellido, String fechaNacimiento, String RFC, String puesto, String horaEntrada, String horaSalida, float salario) {
-        super(nombre, apellido, fechaNacimiento, RFC);
+    public Empleado(String nombre, String apellido, String fechaNacimiento,String telefono, String RFC, String puesto, String horaEntrada, String horaSalida, float salario) {
+        super(nombre, apellido, fechaNacimiento,telefono, RFC);
         this.puesto = puesto;
         this.horaEntrada = horaEntrada;
         this.horaSalida = horaSalida;
