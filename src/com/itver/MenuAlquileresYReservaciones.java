@@ -5,9 +5,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class MenuHabitaciones extends Menu{
+public class MenuAlquileresYReservaciones extends Menu{
 
-    public MenuHabitaciones(BufferedReader lector, String textoMenu,int cantOpciones) {
+    public MenuAlquileresYReservaciones(BufferedReader lector, String textoMenu, int cantOpciones) {
         super(lector, textoMenu,cantOpciones);
     }
 
