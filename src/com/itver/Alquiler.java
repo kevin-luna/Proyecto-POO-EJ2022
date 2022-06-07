@@ -9,7 +9,7 @@ public class Alquiler extends OperacionHabitacion{
     private String fechaLlegada;
     private String fechaSalida;
 
-    public Alquiler(){super();};
+    public Alquiler(){super();}
     public Alquiler(Cliente cliente, int habitacion, String fechaLlegada, String fechaSalida) {
         super(cliente, habitacion);
         this.fechaLlegada = fechaLlegada;
@@ -35,25 +35,22 @@ public class Alquiler extends OperacionHabitacion{
     public void leer(BufferedReader bfr){
         Cliente cliente = new Cliente();
         try{
-            System.out.println("Ingrese el nombre del cliente:");
-            cliente.setNombre(bfr.readLine());
-            System.out.println("Ingrese el apellido del cliente:");
-            cliente.setApellido(bfr.readLine());
+            System.out.println("Ingrese el RFC del cliente:");
+            String rfcCliente = bfr.readLine();
+            this.setCliente(BuscadorCliente.buscar(rfcCliente));
+            if(getCliente()==null) return;
             System.out.println("Ingrese el número de habitación:");
-            cliente.setTelefono(bfr.readLine());
-            System.out.println("Ingrese el telefono del cliente:");
-            cliente.setTelefono(bfr.readLine());
-            this.setCliente(cliente);
+            setHabitacion(Integer.parseInt(bfr.readLine()));
             System.out.println("Ingrese la fecha de llegada:");
-            this.setFechaLlegada(bfr.readLine());
+            setFechaLlegada(bfr.readLine());
             System.out.println("Ingrese la fecha de salida:");
-            this.setFechaSalida(bfr.readLine());
+            setFechaSalida(bfr.readLine());
         }catch (IOException e){
             System.out.println("Ocurrió un error al leer los datos.");
         }
     }
     public void guardar(String file){
-
+        if(getCliente()==null) return;
         try{
             FileWriter fw = new FileWriter(file,true);
             fw.write(this.getCliente().getNombre()+";"+this.getCliente().getApellido()+";"+this.getHabitacion()+";"+this.getCliente().getTelefono()+";"+this.getFechaLlegada()+";"+this.getFechaSalida()+"\n");

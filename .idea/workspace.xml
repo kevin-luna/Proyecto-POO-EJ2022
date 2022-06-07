@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Ahora todos los menús comparten un BufferedReader estático.">
+    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Ahora se usa la clase BuscadorCliente para realizar un Alquiler.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuAlquileresYReservaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuAlquileresYReservaciones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Alquiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Alquiler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/itver/MenuFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuFactura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +88,7 @@
       <workItem from="1654463945872" duration="2148000" />
       <workItem from="1654482804787" duration="15528000" />
       <workItem from="1654528804095" duration="2187000" />
-      <workItem from="1654571418278" duration="10131000" />
+      <workItem from="1654571418278" duration="12953000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit.">
       <created>1654388804596</created>
@@ -255,7 +251,28 @@
       <option name="project" value="LOCAL" />
       <updated>1654586549979</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Ahora todos los menús comparten un BufferedReader estático.">
+      <created>1654587174069</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1654587174069</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Reutilizando código al full, lol.">
+      <created>1654588805540</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1654588805540</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Cambio en las opciones del menú principal.">
+      <created>1654588868721</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1654588868721</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +320,10 @@
     <MESSAGE value="Ya se pueden generar facturas." />
     <MESSAGE value="Clase Empleado eliminada." />
     <MESSAGE value="Ahora todos los menús comparten un BufferedReader estático." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ahora todos los menús comparten un BufferedReader estático." />
+    <MESSAGE value="Reutilizando código al full, lol." />
+    <MESSAGE value="Cambio en las opciones del menú principal." />
+    <MESSAGE value="Ahora se usa la clase BuscadorCliente para realizar un Alquiler." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ahora se usa la clase BuscadorCliente para realizar un Alquiler." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

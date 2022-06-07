@@ -23,26 +23,10 @@ public class MenuFactura extends Menu{
             try {
                 System.out.println("Ingrese el RFC del cliente:");
                 String rfcCliente = lector.readLine();
-                Cliente clienteFactura = new Cliente();
-                BufferedReader fileReader = new BufferedReader(new FileReader("./Clientes.txt"));
-                String tmp;
 
-                while ((tmp=fileReader.readLine())!=null){
-                    String[] obj = tmp.split(";");
-                    if(rfcCliente.equals(obj[4])){
-                        System.out.println("Recuperando datos del cliente...");
-                        clienteFactura.setNombre(obj[0]);
-                        clienteFactura.setApellido(obj[1]);
-                        clienteFactura.setRFC(obj[4]);
-                        clienteFactura.setMetodoPago(obj[5]);
-                        break;
-                    }
-                }
+                Cliente clienteFactura = BuscadorCliente.buscar(rfcCliente);
+                if(clienteFactura==null) break;
 
-                if(clienteFactura.getRFC()==null){
-                    System.out.println("No se encontró el cliente con el RFC ingresado.");
-                    break;
-                }
                 System.out.println("Generando factura para "+clienteFactura.getNombre()+" "+clienteFactura.getApellido());
 
                 System.out.println("¿Cuántos cargos se harán?");
