@@ -2,14 +2,14 @@ package com.itver;
 
 import java.io.Serializable;
 
-public class Persona implements Serializable {
+public class Persona {
     private String nombre;
     private String apellido;
     private String fechaNacimiento;
     private String RFC;
     private String telefono;
 
-    public Persona(){};
+    protected Persona(){}
 
     public Persona(String nombre,String apellido,String telefono){
         this.nombre=nombre;
