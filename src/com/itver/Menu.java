@@ -38,7 +38,7 @@ public abstract class Menu {
         seleccionarOpcion(opcion);
     };
 
-    public abstract void seleccionarOpcion(int op);
+    public void seleccionarOpcion(int op){};
 
     public void mostrar(){
         System.out.println(textoMenu);
