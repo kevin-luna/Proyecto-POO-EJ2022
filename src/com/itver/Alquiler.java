@@ -32,8 +32,8 @@ public class Alquiler extends OperacionHabitacion{
         this.fechaSalida = fechaSalida;
     }
 
+    @Override
     public void leer(BufferedReader bfr){
-        Cliente cliente = new Cliente();
         try{
             System.out.println("Ingrese el RFC del cliente:");
             String rfcCliente = bfr.readLine();
@@ -49,6 +49,7 @@ public class Alquiler extends OperacionHabitacion{
             System.out.println("Ocurrió un error al leer los datos.");
         }
     }
+   @Override
     public void guardar(String file){
         if(getCliente()==null) return;
         try{
