@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Ahora se usa la clase BuscadorCliente para realizar un Alquiler.">
+    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Objeto no utilizado removido.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Alquiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Alquiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuFactura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuAlquileresYReservaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuAlquileresYReservaciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Reservacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Reservacion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,7 @@
       <workItem from="1654463945872" duration="2148000" />
       <workItem from="1654482804787" duration="15528000" />
       <workItem from="1654528804095" duration="2187000" />
-      <workItem from="1654571418278" duration="12953000" />
+      <workItem from="1654571418278" duration="13833000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit.">
       <created>1654388804596</created>
@@ -272,7 +272,28 @@
       <option name="project" value="LOCAL" />
       <updated>1654588868721</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Ahora se usa la clase BuscadorCliente para realizar un Alquiler.">
+      <created>1654589977442</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1654589977442</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Leer y guardar ahora son métodos abstractos de OperacionHabitacion.">
+      <created>1654590334615</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1654590334615</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Objeto no utilizado removido.">
+      <created>1654590456685</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1654590456685</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +320,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Primer commit." />
     <MESSAGE value="El switch se cambió al método seleccionarOpcion en MenuClientes" />
     <MESSAGE value="Menús terminados." />
     <MESSAGE value="Excepción al leer caracteres distintos a un entero controlada." />
@@ -323,10 +343,17 @@
     <MESSAGE value="Reutilizando código al full, lol." />
     <MESSAGE value="Cambio en las opciones del menú principal." />
     <MESSAGE value="Ahora se usa la clase BuscadorCliente para realizar un Alquiler." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ahora se usa la clase BuscadorCliente para realizar un Alquiler." />
+    <MESSAGE value="Leer y guardar ahora son métodos abstractos de OperacionHabitacion." />
+    <MESSAGE value="Objeto no utilizado removido." />
+    <option name="LAST_COMMIT_MESSAGE" value="Objeto no utilizado removido." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ProyectoFinalPOO$com_itver_Main.ic" NAME="com.itver.Main Coverage Results" MODIFIED="1654590356081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.itver.*</FILTER>
+    </SUITE>
   </component>
 </project>

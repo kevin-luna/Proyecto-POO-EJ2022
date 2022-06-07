@@ -20,7 +20,9 @@ public class MenuAlquileresYReservaciones extends Menu{
                 nuevoAlquiler.guardar("./RegistroAlquiler.txt");
                 break;
             case 2:
-                System.out.println("Habitación reservada");
+                Reservacion nuevaReservacion = new Reservacion();
+                nuevaReservacion.leer(lector);
+                nuevaReservacion.guardar("./RegistroReservaciones.txt");
                 break;
             case 3:
                 try{
@@ -42,6 +44,7 @@ public class MenuAlquileresYReservaciones extends Menu{
                 }
                 break;
             case 4:
+
                 break;
             case 5:
                 cerrar();
