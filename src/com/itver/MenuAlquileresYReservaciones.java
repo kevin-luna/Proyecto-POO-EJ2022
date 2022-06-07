@@ -13,58 +13,20 @@ public class MenuAlquileresYReservaciones extends Menu{
 
     @Override
     public void seleccionarOpcion(int op){
-        switch (op){
-            case 1:
+        switch (op) {
+            case 1 -> {
                 Alquiler nuevoAlquiler = new Alquiler();
                 nuevoAlquiler.leer(lector);
                 nuevoAlquiler.guardar();
-                break;
-            case 2:
+            }
+            case 2 -> {
                 Reservacion nuevaReservacion = new Reservacion();
                 nuevaReservacion.leer(lector);
                 nuevaReservacion.guardar();
-                break;
-            case 3:
-                try{
-                    BufferedReader fr = new BufferedReader(new FileReader("./RegistroAlquiler.txt"));
-                    String leftAlignFormat = "| %-52s | %-52s | %-20s | %-18s | %-18s | %-18s |%n";
-                    System.out.format("+------------------------------------------------------+------------------------------------------------------+----------------------+--------------------+--------------------+--------------------+%n");
-                    System.out.format("| Nombre del cliente                                   | Apellido                                             | Número de habitación | Número de teléfono | Fecha de llegada   | Fecha de salida    |%n");
-                    System.out.format("+------------------------------------------------------+------------------------------------------------------+----------------------+--------------------+--------------------+--------------------+%n");
-                    String line;
-                    while((line=fr.readLine())!=null){
-                        String[] datosAlquiler = line.split(";");
-                        System.out.format(leftAlignFormat,datosAlquiler[0],datosAlquiler[1],datosAlquiler[2],datosAlquiler[3],datosAlquiler[4],datosAlquiler[5]);
-                    }
-                    System.out.format("+------------------------------------------------------+------------------------------------------------------+----------------------+--------------------+--------------------+--------------------+%n");
-                }catch (FileNotFoundException e){
-                    System.out.println("No se encuentra el archivo");
-                }catch (IOException e){
-                    e.printStackTrace();
-                }
-                break;
-            case 4:
-                try{
-                    BufferedReader fr = new BufferedReader(new FileReader("./RegistroReservaciones.txt"));
-                    String leftAlignFormat = "| %-52s | %-52s | %-20s | %-18s | %-23s |%n";
-                    System.out.format("+------------------------------------------------------+------------------------------------------------------+----------------------+--------------------+-------------------------+%n");
-                    System.out.format("| Nombre del cliente                                   | Apellido                                             | Número de habitación | Número de teléfono | Fecha de la reservación |%n");
-                    System.out.format("+------------------------------------------------------+------------------------------------------------------+----------------------+--------------------+-------------------------+%n");
-                    String line;
-                    while((line=fr.readLine())!=null){
-                        String[] datosAlquiler = line.split(";");
-                        System.out.format(leftAlignFormat,datosAlquiler[0],datosAlquiler[1],datosAlquiler[2],datosAlquiler[3],datosAlquiler[4]);
-                    }
-                    System.out.format("+------------------------------------------------------+------------------------------------------------------+----------------------+--------------------+-------------------------+%n");
-                }catch (FileNotFoundException e){
-                    System.out.println("No se encuentra el archivo");
-                }catch (IOException e){
-                    e.printStackTrace();
-                }
-                break;
-            case 5:
-                cerrar();
-                break;
+            }
+            case 3 -> Alquiler.mostrarAlquileres();
+            case 4 -> Reservacion.mostrarReservaciones();
+            case 5 -> cerrar();
         }
     }
 }

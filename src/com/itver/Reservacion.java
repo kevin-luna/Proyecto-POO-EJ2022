@@ -1,8 +1,6 @@
 package com.itver;
 
-import java.io.BufferedReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class Reservacion extends OperacionHabitacion{
 
@@ -43,6 +41,26 @@ public class Reservacion extends OperacionHabitacion{
             System.out.println("El registro de la habitación alquilada se ha realizado correctamente.");
         }catch (IOException e){
             System.out.println("Ocurrió un error al intentar escribir en el archivo.");
+        }
+    }
+
+    public static void mostrarReservaciones(){
+        try{
+            BufferedReader fr = new BufferedReader(new FileReader(archivoRegistro));
+            String leftAlignFormat = "| %-52s | %-52s | %-20s | %-18s | %-23s |%n";
+            System.out.format("+------------------------------------------------------+------------------------------------------------------+----------------------+--------------------+-------------------------+%n");
+            System.out.format("| Nombre del cliente                                   | Apellido                                             | Número de habitación | Número de teléfono | Fecha de la reservación |%n");
+            System.out.format("+------------------------------------------------------+------------------------------------------------------+----------------------+--------------------+-------------------------+%n");
+            String line;
+            while((line=fr.readLine())!=null){
+                String[] datosAlquiler = line.split(";");
+                System.out.format(leftAlignFormat,datosAlquiler[0],datosAlquiler[1],datosAlquiler[2],datosAlquiler[3],datosAlquiler[4]);
+            }
+            System.out.format("+------------------------------------------------------+------------------------------------------------------+----------------------+--------------------+-------------------------+%n");
+        }catch (FileNotFoundException e){
+            System.out.println("No se encuentra el archivo");
+        }catch (IOException e){
+            e.printStackTrace();
         }
     }
 

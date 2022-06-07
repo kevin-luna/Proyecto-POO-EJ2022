@@ -1,8 +1,6 @@
 package com.itver;
 
-import java.io.BufferedReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class Alquiler extends OperacionHabitacion{
 
@@ -14,22 +12,6 @@ public class Alquiler extends OperacionHabitacion{
     public Alquiler(Cliente cliente, int habitacion, String fechaLlegada, String fechaSalida) {
         super(cliente, habitacion);
         this.fechaLlegada = fechaLlegada;
-        this.fechaSalida = fechaSalida;
-    }
-
-    public String getFechaLlegada() {
-        return fechaLlegada;
-    }
-
-    public void setFechaLlegada(String fechaLlegada) {
-        this.fechaLlegada = fechaLlegada;
-    }
-
-    public String getFechaSalida() {
-        return fechaSalida;
-    }
-
-    public void setFechaSalida(String fechaSalida) {
         this.fechaSalida = fechaSalida;
     }
 
@@ -50,7 +32,8 @@ public class Alquiler extends OperacionHabitacion{
             System.out.println("Ocurrió un error al leer los datos.");
         }
     }
-   @Override
+
+    @Override
     public void guardar(){
         if(getCliente()==null) return;
         try{
@@ -61,5 +44,40 @@ public class Alquiler extends OperacionHabitacion{
         }catch (IOException e){
             System.out.println("Ocurrió un error al intentar escribir en el archivo.");
         }
+    }
+
+    public static void mostrarAlquileres(){
+        try{
+            BufferedReader fr = new BufferedReader(new FileReader(archivoRegistro));
+            String leftAlignFormat = "| %-52s | %-52s | %-20s | %-18s | %-18s | %-18s |%n";
+            System.out.format("+------------------------------------------------------+------------------------------------------------------+----------------------+--------------------+--------------------+--------------------+%n");
+            System.out.format("| Nombre del cliente                                   | Apellido                                             | Número de habitación | Número de teléfono | Fecha de llegada   | Fecha de salida    |%n");
+            System.out.format("+------------------------------------------------------+------------------------------------------------------+----------------------+--------------------+--------------------+--------------------+%n");
+            String line;
+            while((line=fr.readLine())!=null){
+                String[] datosAlquiler = line.split(";");
+                System.out.format(leftAlignFormat,datosAlquiler[0],datosAlquiler[1],datosAlquiler[2],datosAlquiler[3],datosAlquiler[4],datosAlquiler[5]);
+            }
+            System.out.format("+------------------------------------------------------+------------------------------------------------------+----------------------+--------------------+--------------------+--------------------+%n");
+        }catch (FileNotFoundException e){
+            System.out.println("No se encuentra el archivo");
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+    public String getFechaLlegada() {
+        return fechaLlegada;
+    }
+
+    public void setFechaLlegada(String fechaLlegada) {
+        this.fechaLlegada = fechaLlegada;
+    }
+
+    public String getFechaSalida() {
+        return fechaSalida;
+    }
+
+    public void setFechaSalida(String fechaSalida) {
+        this.fechaSalida = fechaSalida;
     }
 }
