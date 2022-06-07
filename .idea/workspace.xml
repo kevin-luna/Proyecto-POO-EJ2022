@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Ahora mostrarReservaciones y mostrarAlquileres son métodos estáticos&#10;de Reservaciones y Alquiler.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Factura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuFactura.java" afterDir="false" />
+    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Factura cuenta con métodos leer y guardar.">
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +86,7 @@
       <workItem from="1654463945872" duration="2148000" />
       <workItem from="1654482804787" duration="15528000" />
       <workItem from="1654528804095" duration="2187000" />
-      <workItem from="1654571418278" duration="15784000" />
+      <workItem from="1654571418278" duration="15871000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit.">
       <created>1654388804596</created>
@@ -328,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654592390898</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Factura cuenta con métodos leer y guardar.">
+      <created>1654592888633</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1654592888633</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +360,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Se solucionó el problema de la lectura desde archivos.&#10;Ahora los registros se almacenan en texto plano.&#10;Ya es posible visualizar el registro de clientes." />
     <MESSAGE value="Corrección en la clase Empleado, ahora hereda de Persona." />
     <MESSAGE value="Clase ObjectOutputStreamModificado eliminada.&#10;Ya que ahora se almacenan los registros en texto plano&#10;ya no es necesaria." />
     <MESSAGE value="Ya se almacenan registros de alquiler de habitaciones." />
@@ -380,7 +384,8 @@
     <MESSAGE value="Se renombró el archivo de registro de los clientes." />
     <MESSAGE value="Ya se pueden ver las reservaciones." />
     <MESSAGE value="Ahora mostrarReservaciones y mostrarAlquileres son métodos estáticos&#10;de Reservaciones y Alquiler." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ahora mostrarReservaciones y mostrarAlquileres son métodos estáticos&#10;de Reservaciones y Alquiler." />
+    <MESSAGE value="Factura cuenta con métodos leer y guardar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Factura cuenta con métodos leer y guardar." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

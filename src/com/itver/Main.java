@@ -9,9 +9,6 @@ import java.util.Date;
 public class Main {
     public static void main(String[] args) {
 
-        SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'a las' HH:mm:ss");
-        Date date = new Date(System.currentTimeMillis());
-        System.out.println(formatter.format(date));
         MenuPrincipal menuPrincipal = new MenuPrincipal(
                 "---Bienvenido al sistema---\n\n¿Qué desea hacer?:\n1. Gestionar clientes\n2. Gestionar alquileres y reservaciones\n3. Imprimir una factura\n4. Salir",4);
         menuPrincipal.iniciar();
