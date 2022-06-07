@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="La clase MenuHabitaciones fue renombrada a MenuAlquileresYReservaciones.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Ya se pueden generar facturas.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Cargo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Cargo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Habitacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Factura.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/itver/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuEmpleados.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/itver/MenuFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuFactura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -92,7 +89,7 @@
       <workItem from="1654463945872" duration="2148000" />
       <workItem from="1654482804787" duration="15528000" />
       <workItem from="1654528804095" duration="2187000" />
-      <workItem from="1654571418278" duration="2546000" />
+      <workItem from="1654571418278" duration="8974000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit.">
       <created>1654388804596</created>
@@ -213,7 +210,35 @@
       <option name="project" value="LOCAL" />
       <updated>1654579398170</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="El submenu de Empleados fue removido.">
+      <created>1654579532024</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1654579532024</updated>
+    </task>
+    <task id="LOCAL-00019" summary="La clase Habitacion fue removida.">
+      <created>1654579565531</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1654579565531</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Se agregaron setters, getters y un constructor vacío a la clase Cargo.">
+      <created>1654585555777</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1654585555777</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Persona ya no implementa la interfaz Serializable y se agregó&#10;un constructor vacío.">
+      <created>1654585714781</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1654585714781</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +273,12 @@
     <MESSAGE value="Lectura de registros de alquiler." />
     <MESSAGE value="Método seleccionarOpcion en Menu dejó de ser abstracto." />
     <MESSAGE value="La clase MenuHabitaciones fue renombrada a MenuAlquileresYReservaciones." />
-    <option name="LAST_COMMIT_MESSAGE" value="La clase MenuHabitaciones fue renombrada a MenuAlquileresYReservaciones." />
+    <MESSAGE value="El submenu de Empleados fue removido." />
+    <MESSAGE value="La clase Habitacion fue removida." />
+    <MESSAGE value="Se agregaron setters, getters y un constructor vacío a la clase Cargo." />
+    <MESSAGE value="Persona ya no implementa la interfaz Serializable y se agregó&#10;un constructor vacío." />
+    <MESSAGE value="Ya se pueden generar facturas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ya se pueden generar facturas." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
