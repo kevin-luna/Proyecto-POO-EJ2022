@@ -1,8 +1,6 @@
 package com.itver;
 
-import java.io.BufferedReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class Cliente extends Persona{
     private static final String archivoRegistro = "./RegistroClientes.txt";
@@ -68,6 +66,26 @@ public class Cliente extends Persona{
             System.out.println("Cliente registrado correctamente.");
         }catch (IOException e){
             System.out.println("Ocurrió un error al intentar escribir en el archivo.");
+        }
+    }
+
+    public static void mostrarClientes(){
+        try{
+            BufferedReader fr = new BufferedReader(new FileReader(archivoRegistro));
+            String leftAlignFormat = "| %-52s | %-52s | %-19s | %-9s | %-9s | %-18s |%n";
+            System.out.format("+------------------------------------------------------+------------------------------------------------------+---------------------+------------+-----------+--------------------+%n");
+            System.out.format("| Nombre                                               | Apellido                                             | Fecha de Nacimiento | Teléfono   | RFC       | Metodo de pago     |%n");
+            System.out.format("+------------------------------------------------------+------------------------------------------------------+---------------------+------------+-----------+--------------------+%n");
+            String line;
+            while((line=fr.readLine())!=null){
+                String[] serial = line.split(";");
+                System.out.format(leftAlignFormat,serial[0],serial[1],serial[2],serial[3],serial[4],serial[5]);
+            }
+            System.out.format("+------------------------------------------------------+------------------------------------------------------+---------------------+------------+-----------+--------------------+%n");
+        }catch (FileNotFoundException e){
+            System.out.println("No se encuentra el archivo");
+        }catch (IOException e){
+            e.printStackTrace();
         }
     }
 }
