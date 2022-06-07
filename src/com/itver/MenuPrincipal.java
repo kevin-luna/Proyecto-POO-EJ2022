@@ -1,7 +1,6 @@
 package com.itver;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 
 public class MenuPrincipal extends Menu{
     public MenuPrincipal(BufferedReader lector, String textoMenu,int cantOpciones) {
@@ -16,18 +15,14 @@ public class MenuPrincipal extends Menu{
                 menuClientes.iniciar();
                 break;
             case 2:
-                MenuHabitaciones menuHabitaciones = new MenuHabitaciones(this.lector,"Gestión de habitaciones\n\n¿Qué desea hacer?\n1. Alquilar una habitación\n2. Reservar una habitación\n3. Ver habitaciones alquiladas\n4. Ver reservaciones\n5. Regresar al menú anterior",5);
-                menuHabitaciones.iniciar();
+                MenuAlquileresYReservaciones menuAlquileresYReservaciones = new MenuAlquileresYReservaciones(this.lector,"Gestión de habitaciones\n\n¿Qué desea hacer?\n1. Alquilar una habitación\n2. Reservar una habitación\n3. Ver habitaciones alquiladas\n4. Ver reservaciones\n5. Regresar al menú anterior",5);
+                menuAlquileresYReservaciones.iniciar();
                 break;
             case 3:
-                MenuEmpleados menuEmpleados = new MenuEmpleados(this.lector,"Gestión de empleados\n\n¿Qué desea hacer?\n1. Agregar un empleado\n2. Ver la lista de empleados\n3. Regresar al menú anterior",3);
-                menuEmpleados.iniciar();
-                break;
-            case 4:
                 MenuFactura menuFactura = new MenuFactura(this.lector,"",3);
                 menuFactura.iniciar();
                 break;
-            case 5:
+            case 4:
                 cerrar();
                 break;
         }
