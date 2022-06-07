@@ -7,8 +7,8 @@ import java.io.IOException;
 
 public class MenuAlquileresYReservaciones extends Menu{
 
-    public MenuAlquileresYReservaciones(BufferedReader lector, String textoMenu, int cantOpciones) {
-        super(lector, textoMenu,cantOpciones);
+    public MenuAlquileresYReservaciones(String textoMenu, int cantOpciones) {
+        super(textoMenu,cantOpciones);
     }
 
     @Override
@@ -31,8 +31,8 @@ public class MenuAlquileresYReservaciones extends Menu{
                     System.out.format("+------------------------------------------------------+------------------------------------------------------+----------------------+--------------------+--------------------+--------------------+%n");
                     String line;
                     while((line=fr.readLine())!=null){
-                        String serial[] = line.split(";");
-                        System.out.format(leftAlignFormat,serial[0],serial[1],serial[2],serial[3],serial[4],serial[5]);
+                        String[] datosAlquiler = line.split(";");
+                        System.out.format(leftAlignFormat,datosAlquiler[0],datosAlquiler[1],datosAlquiler[2],datosAlquiler[3],datosAlquiler[4],datosAlquiler[5]);
                     }
                     System.out.format("+------------------------------------------------------+------------------------------------------------------+----------------------+--------------------+--------------------+--------------------+%n");
                 }catch (FileNotFoundException e){

@@ -2,16 +2,16 @@ package com.itver;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public abstract class Menu {
-    protected final BufferedReader lector;
+    protected final static BufferedReader lector = new BufferedReader(new InputStreamReader(System.in));
     protected final String textoMenu;
     protected final int cantOpciones;
 
     protected boolean salir=false;
 
-    public Menu(final BufferedReader lector, final String textoMenu, final int cantOpciones) {
-        this.lector = lector;
+    public Menu(final String textoMenu, final int cantOpciones) {
         this.textoMenu = textoMenu;
         this.cantOpciones=cantOpciones;
     }
@@ -36,9 +36,9 @@ public abstract class Menu {
             }
         }while(opcion<1 && opcion>cantOpciones);
         seleccionarOpcion(opcion);
-    };
+    }
 
-    public void seleccionarOpcion(int op){};
+    public void seleccionarOpcion(int op){}
 
     public void mostrar(){
         System.out.println(textoMenu);

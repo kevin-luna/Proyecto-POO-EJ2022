@@ -7,8 +7,8 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 public class MenuFactura extends Menu{
-    public MenuFactura(BufferedReader lector, String textoMenu,int cantOpciones) {
-        super(lector, textoMenu,cantOpciones);
+    public MenuFactura(String textoMenu,int cantOpciones) {
+        super(textoMenu,cantOpciones);
     }
 
     @Override

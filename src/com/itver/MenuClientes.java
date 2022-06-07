@@ -3,8 +3,8 @@ package com.itver;
 import java.io.*;
 
 public class MenuClientes extends Menu {
-    public MenuClientes(BufferedReader lector, String textoMenu,int cantOpciones) {
-        super(lector, textoMenu,cantOpciones);
+    public MenuClientes(String textoMenu,int cantOpciones) {
+        super(textoMenu,cantOpciones);
     }
 
     @Override
@@ -24,7 +24,7 @@ public class MenuClientes extends Menu {
                     System.out.format("+------------------------------------------------------+------------------------------------------------------+---------------------+------------+-----------+--------------------+%n");
                     String line;
                     while((line=fr.readLine())!=null){
-                        String serial[] = line.split(";");
+                        String[] serial = line.split(";");
                         System.out.format(leftAlignFormat,serial[0],serial[1],serial[2],serial[3],serial[4],serial[5]);
                     }
                     System.out.format("+------------------------------------------------------+------------------------------------------------------+---------------------+------------+-----------+--------------------+%n");
