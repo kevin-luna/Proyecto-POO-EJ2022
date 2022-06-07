@@ -9,7 +9,7 @@ public class BuscadorCliente {
     public static Cliente buscar(String rfc){
         try{
             Cliente clienteFactura = new Cliente();
-            BufferedReader fileReader = new BufferedReader(new FileReader("./Clientes.txt"));
+            BufferedReader fileReader = new BufferedReader(new FileReader("./RegistroClientes.txt"));
             String tmp;
 
             while ((tmp=fileReader.readLine())!=null){
