@@ -27,7 +27,8 @@ public class Factura {
                 String rfcCliente = bfr.readLine();
 
                 Cliente clienteFactura = BuscadorCliente.buscar(rfcCliente);
-                if(clienteFactura==null) break;
+                if(clienteFactura==null)break;
+
 
                 System.out.println("Generando factura para "+clienteFactura.getNombre()+" "+clienteFactura.getApellido());
 
@@ -58,6 +59,7 @@ public class Factura {
     }
 
     public void guardar(){
+        if(cliente==null)return;
         Date date = new Date(System.currentTimeMillis());
         try{
             FileWriter fw = new FileWriter("./Facturas/"+(new SimpleDateFormat("dd-MM-yyyy-HH-mm").format(date))+".txt");

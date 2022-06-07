@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Se eliminó código basura del Main.">
+    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Ahora la clase Cliente cuenta con un método mostrarClientes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Factura.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +87,8 @@
       <workItem from="1654463945872" duration="2148000" />
       <workItem from="1654482804787" duration="15528000" />
       <workItem from="1654528804095" duration="2187000" />
-      <workItem from="1654571418278" duration="16154000" />
+      <workItem from="1654571418278" duration="16915000" />
+      <workItem from="1654612701166" duration="2357000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit.">
       <created>1654388804596</created>
@@ -342,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654592929758</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Ahora la clase Cliente cuenta con un método mostrarClientes.">
+      <created>1654593263203</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1654593263203</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +376,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Clase ObjectOutputStreamModificado eliminada.&#10;Ya que ahora se almacenan los registros en texto plano&#10;ya no es necesaria." />
     <MESSAGE value="Ya se almacenan registros de alquiler de habitaciones." />
     <MESSAGE value="Por si se va la luzxd." />
     <MESSAGE value="Lectura de registros de alquiler." />
@@ -394,7 +400,8 @@
     <MESSAGE value="Ahora mostrarReservaciones y mostrarAlquileres son métodos estáticos&#10;de Reservaciones y Alquiler." />
     <MESSAGE value="Factura cuenta con métodos leer y guardar." />
     <MESSAGE value="Se eliminó código basura del Main." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se eliminó código basura del Main." />
+    <MESSAGE value="Ahora la clase Cliente cuenta con un método mostrarClientes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ahora la clase Cliente cuenta con un método mostrarClientes." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
