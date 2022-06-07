@@ -13,7 +13,7 @@ public class Main {
         Date date = new Date(System.currentTimeMillis());
         System.out.println(formatter.format(date));
         MenuPrincipal menuPrincipal = new MenuPrincipal(
-                "---Bienvenido al sistema---\n\n¿Qué desea hacer?:\n1. Gestionar clientes\n2. Gestionar habitaciones\n3. Imprimir una factura\n4. Salir",4);
+                "---Bienvenido al sistema---\n\n¿Qué desea hacer?:\n1. Gestionar clientes\n2. Gestionar alquileres y reservaciones\n3. Imprimir una factura\n4. Salir",4);
         menuPrincipal.iniciar();
         System.out.println("Saliendo...");
         System.out.println("¡Hasta pronto!");
