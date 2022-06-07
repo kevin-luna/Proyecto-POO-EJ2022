@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Ya se pueden generar facturas.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Factura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuFactura.java" afterDir="false" />
-    </list>
+    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Ya se pueden generar facturas." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +84,7 @@
       <workItem from="1654463945872" duration="2148000" />
       <workItem from="1654482804787" duration="15528000" />
       <workItem from="1654528804095" duration="2187000" />
-      <workItem from="1654571418278" duration="8974000" />
+      <workItem from="1654571418278" duration="9290000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit.">
       <created>1654388804596</created>
@@ -238,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654585714781</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Ya se pueden generar facturas.">
+      <created>1654586036690</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1654586036690</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +251,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
