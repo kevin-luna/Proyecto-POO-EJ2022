@@ -15,7 +15,7 @@ public abstract class OperacionHabitacion {
 
     public abstract void leer(BufferedReader bfr);
 
-    public abstract void guardar(String file);
+    public abstract void guardar();
 
     public Cliente getCliente() {
         return cliente;

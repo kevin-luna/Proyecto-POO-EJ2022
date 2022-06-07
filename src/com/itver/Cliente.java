@@ -5,9 +5,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Cliente extends Persona{
+    private static final String archivoRegistro = "./RegistroClientes.txt";
     private String metodoPago;
 
-    public Cliente(){};
+    public Cliente(){}
 
     public Cliente(String nombre,String apellido,String telefono){
         super(nombre,apellido,telefono);
@@ -59,9 +60,9 @@ public class Cliente extends Persona{
         }while(cantClientes<0);
     }
 
-    public void guardar(String file){
+    public void guardar(){
         try{
-            FileWriter fw = new FileWriter(file,true);
+            FileWriter fw = new FileWriter(archivoRegistro,true);
             fw.write(this.getNombre()+";"+this.getApellido()+";"+this.getFechaNacimiento()+";"+this.getTelefono()+";"+this.getRFC()+";"+this.getMetodoPago()+"\n");
             fw.close();
             System.out.println("Cliente registrado correctamente.");

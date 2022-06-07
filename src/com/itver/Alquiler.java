@@ -6,6 +6,7 @@ import java.io.IOException;
 
 public class Alquiler extends OperacionHabitacion{
 
+    private static final String archivoRegistro = "./RegistroAlquiler.txt";
     private String fechaLlegada;
     private String fechaSalida;
 
@@ -50,10 +51,10 @@ public class Alquiler extends OperacionHabitacion{
         }
     }
    @Override
-    public void guardar(String file){
+    public void guardar(){
         if(getCliente()==null) return;
         try{
-            FileWriter fw = new FileWriter(file,true);
+            FileWriter fw = new FileWriter(archivoRegistro,true);
             fw.write(this.getCliente().getNombre()+";"+this.getCliente().getApellido()+";"+this.getHabitacion()+";"+this.getCliente().getTelefono()+";"+this.getFechaLlegada()+";"+this.getFechaSalida()+"\n");
             fw.close();
             System.out.println("El registro de la habitación alquilada se ha realizado correctamente.");

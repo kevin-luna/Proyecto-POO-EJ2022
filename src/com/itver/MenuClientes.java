@@ -13,11 +13,11 @@ public class MenuClientes extends Menu {
             case 1:
                 Cliente nuevoCliente=new Cliente();
                 nuevoCliente.leer(lector);
-                nuevoCliente.guardar("./Clientes.txt");
+                nuevoCliente.guardar();
                 break;
             case 2:
                 try{
-                    BufferedReader fr = new BufferedReader(new FileReader("./Clientes.txt"));
+                    BufferedReader fr = new BufferedReader(new FileReader("./RegistroClientes.txt"));
                     String leftAlignFormat = "| %-52s | %-52s | %-19s | %-9s | %-9s | %-18s |%n";
                     System.out.format("+------------------------------------------------------+------------------------------------------------------+---------------------+------------+-----------+--------------------+%n");
                     System.out.format("| Nombre                                               | Apellido                                             | Fecha de Nacimiento | Teléfono   | RFC       | Metodo de pago     |%n");

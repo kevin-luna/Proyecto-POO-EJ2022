@@ -17,12 +17,12 @@ public class MenuAlquileresYReservaciones extends Menu{
             case 1:
                 Alquiler nuevoAlquiler = new Alquiler();
                 nuevoAlquiler.leer(lector);
-                nuevoAlquiler.guardar("./RegistroAlquiler.txt");
+                nuevoAlquiler.guardar();
                 break;
             case 2:
                 Reservacion nuevaReservacion = new Reservacion();
                 nuevaReservacion.leer(lector);
-                nuevaReservacion.guardar("./RegistroReservaciones.txt");
+                nuevaReservacion.guardar();
                 break;
             case 3:
                 try{

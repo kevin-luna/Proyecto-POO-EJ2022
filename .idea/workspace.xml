@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Objeto no utilizado removido.">
+    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Ahora los nombres de los archivos de registro están&#10;integrados como atributos estáticos en sus respectivas clases.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Alquiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Alquiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/BuscadorCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/BuscadorCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/itver/MenuAlquileresYReservaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuAlquileresYReservaciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuClientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/OperacionHabitacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/OperacionHabitacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/itver/Reservacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Reservacion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +93,7 @@
       <workItem from="1654463945872" duration="2148000" />
       <workItem from="1654482804787" duration="15528000" />
       <workItem from="1654528804095" duration="2187000" />
-      <workItem from="1654571418278" duration="13833000" />
+      <workItem from="1654571418278" duration="14560000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit.">
       <created>1654388804596</created>
@@ -293,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654590456685</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Ya se pueden almacenar las reservaciones.">
+      <created>1654590908260</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1654590908260</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,8 +332,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="El switch se cambió al método seleccionarOpcion en MenuClientes" />
-    <MESSAGE value="Menús terminados." />
     <MESSAGE value="Excepción al leer caracteres distintos a un entero controlada." />
     <MESSAGE value="Clase ObjectOutputStreamModificado agregada para eliminar&#10;el patron de final de objetos en el archivo." />
     <MESSAGE value="Ya es posible registrar clientes." />
@@ -345,7 +355,9 @@
     <MESSAGE value="Ahora se usa la clase BuscadorCliente para realizar un Alquiler." />
     <MESSAGE value="Leer y guardar ahora son métodos abstractos de OperacionHabitacion." />
     <MESSAGE value="Objeto no utilizado removido." />
-    <option name="LAST_COMMIT_MESSAGE" value="Objeto no utilizado removido." />
+    <MESSAGE value="Ya se pueden almacenar las reservaciones." />
+    <MESSAGE value="Ahora los nombres de los archivos de registro están&#10;integrados como atributos estáticos en sus respectivas clases." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ahora los nombres de los archivos de registro están&#10;integrados como atributos estáticos en sus respectivas clases." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
