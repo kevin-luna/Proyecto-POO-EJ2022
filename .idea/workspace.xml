@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="Por si se va la luzxd.">
+    <list default="true" id="22b6c148-5bb8-4853-88a8-b2874b40cd99" name="Changes" comment="La clase MenuHabitaciones fue renombrada a MenuAlquileresYReservaciones.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Alquiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Alquiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuHabitaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuHabitaciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Cargo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Cargo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Habitacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuEmpleados.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/itver/MenuFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuFactura.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/itver/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/MenuPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/OperacionHabitacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/OperacionHabitacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/itver/Reservacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/itver/Reservacion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,22 +40,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Kevin/Documents/ProyectoFinalPOO",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kevin/Documents/ProyectoFinalPOO&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.itver.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.itver.Main" />
       <module name="ProyectoFinalPOO" />
       <extension name="coverage">
@@ -68,8 +70,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.com.itver.Main" />
+        <item itemvalue="Application.com.itver.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -88,7 +90,9 @@
       <workItem from="1654389192934" duration="89000" />
       <workItem from="1654389296968" duration="2147000" />
       <workItem from="1654463945872" duration="2148000" />
-      <workItem from="1654482804787" duration="13859000" />
+      <workItem from="1654482804787" duration="15528000" />
+      <workItem from="1654528804095" duration="2187000" />
+      <workItem from="1654571418278" duration="2546000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit.">
       <created>1654388804596</created>
@@ -188,7 +192,28 @@
       <option name="project" value="LOCAL" />
       <updated>1654495326440</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Lectura de registros de alquiler.">
+      <created>1654496858702</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1654496858702</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Método seleccionarOpcion en Menu dejó de ser abstracto.">
+      <created>1654579370525</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1654579370525</updated>
+    </task>
+    <task id="LOCAL-00017" summary="La clase MenuHabitaciones fue renombrada a MenuAlquileresYReservaciones.">
+      <created>1654579398170</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1654579398170</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +245,10 @@
     <MESSAGE value="Clase ObjectOutputStreamModificado eliminada.&#10;Ya que ahora se almacenan los registros en texto plano&#10;ya no es necesaria." />
     <MESSAGE value="Ya se almacenan registros de alquiler de habitaciones." />
     <MESSAGE value="Por si se va la luzxd." />
-    <option name="LAST_COMMIT_MESSAGE" value="Por si se va la luzxd." />
+    <MESSAGE value="Lectura de registros de alquiler." />
+    <MESSAGE value="Método seleccionarOpcion en Menu dejó de ser abstracto." />
+    <MESSAGE value="La clase MenuHabitaciones fue renombrada a MenuAlquileresYReservaciones." />
+    <option name="LAST_COMMIT_MESSAGE" value="La clase MenuHabitaciones fue renombrada a MenuAlquileresYReservaciones." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
